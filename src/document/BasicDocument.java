@@ -30,7 +30,7 @@ public class BasicDocument extends Document
 	{
 		//TODO: Implement this method.  See the Module 1 support videos 
 	    // if you need help.
-	    return 0;
+	    return getTokens("[\\w0-9]+").size();
 	}
 	
 	/**
@@ -46,9 +46,8 @@ public class BasicDocument extends Document
 	{
 	    //TODO: Implement this method.  See the Module 1 support videos 
         // if you need help.
-//		String doc = getText();
-//		List<String> sentences = getTokens(". ");
-        return getTokens("^\\s*[A-Za-z,;'\"\\s]+[.?!]$").size();
+
+        return getTokens("^\\s*[A-Za-z0-9,;'\"\\s]+[.?!]*$").size();
 	}
 	
 	/**
@@ -64,7 +63,7 @@ public class BasicDocument extends Document
 	{
 	    //TODO: Implement this method.  See the Module 1 support videos 
         // if you need help.
-        return 0;
+        return countSyllables(getText());
 	}
 	
 	
