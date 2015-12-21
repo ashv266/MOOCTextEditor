@@ -1,0 +1,8 @@
+#Gitignore files
+
+.settings
+.project
+.classpath
+bin/
+target/
+
