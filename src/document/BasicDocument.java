@@ -46,8 +46,8 @@ public class BasicDocument extends Document
 	{
 	    //TODO: Implement this method.  See the Module 1 support videos 
         // if you need help.
-
-        return getTokens("^\\s*[A-Za-z0-9,;'\"\\s]+[.?!]*$").size();
+//^\\s*[A-Za-z0-9,;'\"\\s]+[.?!]*$
+        return getTokens("^\\s*[A-Za-z0-9,\\s]*[.?!)]*$").size();
 	}
 	
 	/**
